@@ -1,0 +1,516 @@
+<body style="margin:0px; background-color:#fdfdfd;padding:0px;" class="ui-mobile-viewport ui-overlay-a" data-new-gr-c-s-check-loaded="14.1265.0" data-gr-ext-installed=""><div data-role="page" data-url="/Invitation.php?token=1xifUCVE" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M78V63M"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
+
+
+
+
+	
+	<form style="margin:0px;" id="invitation_form" enctype="multipart/form-data" method="post">
+	
+		<div class="js-container-confetti" style="display: none; position: absolute;"><div class="confetti-container"><div class="confetti confetti--animation-fast" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 7px; height: 7px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 7px; height: 7px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 7px; height: 7px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 7px; height: 7px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 7px; height: 7px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 7px; height: 7px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 7px; height: 7px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 7px; height: 7px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 7px; height: 7px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 9px; height: 9px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 7px; height: 7px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 9px; height: 9px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 9px; height: 9px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 8px; height: 8px; background-color: rgb(244, 48, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(252, 225, 138);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 9px; height: 9px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-medium" style="left: 0px; width: 8px; height: 8px; background-color: rgb(180, 141, 239);"></div><div class="confetti confetti--animation-slow" style="left: 0px; width: 7px; height: 7px; background-color: rgb(255, 114, 109);"></div><div class="confetti confetti--animation-fast" style="left: 0px; width: 8px; height: 8px; background-color: rgb(252, 225, 138);"></div></div></div>
+		
+		<div id="loading">
+			<div id="loading_top">
+				אנא המתינו...
+			</div>
+			<div id="loading_bottom">
+			<svg class="heart" viewBox="0 0 32 29.6">
+				<path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"></path>
+			</svg>
+			</div>			
+		</div>
+		
+		<div id="cover">
+			
+		</div>	
+		
+		<div id="cover_box">
+			
+		</div>	
+		
+		<div id="cover_box2">
+			
+		</div>
+		
+		<div id="cover_box3">
+			
+		</div>
+		
+		<div id="cover_box4">
+			
+		</div>		
+		
+			
+		
+		<div id="alertWindow">
+			<div id="alertWindow_title">שימו לב!</div>
+			<div id="alertWindow_content">
+				אנא הזינו שם מלא
+			</div>	
+			<div id="alertWindow_buttons">
+				<div id="alertWindow_buttons_ok">
+					אישור
+				</div>
+				<div id="alertWindow_buttons_cancel">
+					לא, המשך
+				</div>
+			</div>	
+		</div>	
+		
+		
+		<div id="lockInvitation" style="height: 10000px;">
+
+		</div>
+		
+		<div id="lockMessage">
+			<div id="lockMessage_content">			
+				<span style="font-weight:700; font-size:22px;">אופססס...</span>
+				<p style="padding:0px; margin:0px; text-align:center; font-size:17px; direction:rtl;padding-top:15px;padding-bottom:15px;">
+					הזמנה זאת ננעלה לשימוש על ידי המערכת.
+					<br>
+					למעבר לעמוד הראשי
+					<a style="color:#4d7ad0; font-weight:700;text-decoration:underline;font-size:17px;" href="https://10comm.com/4Event.php" class="ui-link">לחצו כאן</a>.
+				</p>
+				טנקום הזמנות דיגיטליות
+			</div>
+		</div>
+		
+		
+				
+		
+		<div id="center_loader_new">
+			<img src="photos/loader.gif">
+		</div>
+		
+		
+		<div id="blessingWindow">
+			<div id="close_blessingWindow">
+				X
+			</div>
+			<div id="topTitle_blessing">
+				- ברכה / הערה -
+			</div>
+			<div id="blessingWindow_title">
+			
+			</div>
+			<div id="blessingWindow_content">
+				<img id="loadBlessing" style="margin-top:40px;" src="photos/loader.gif">
+			</div>
+		</div>
+		
+		
+		<div id="businessInfoWindow" style="height: 763.2px; margin-top: -381.6px; left: 50%; margin-left: -230px;">
+			<div id="close_businessInfoWindow">
+				X
+			</div>
+			
+					
+			<a style="text-decoration:none;" target="_blank" href="https://10comm.com/biz/adel-events?invt=1" class="ui-link">
+				<div id="businessInfoWindow_coverImage" style="background-image:url(photos/UploadImage/adel_events_image_1_824900429.jpeg)">
+					<div id="businessInfoWindow_businessName">
+						אדל אירועים					</div>
+				</div>
+			</a>
+		
+			<div id="businessInfoWindow_businessAddress">
+				כתובת: פלוטיצקי 18, ראשון לציון			</div>	
+			
+			<div id="businessInfoWindow_cubesArea">
+				
+				<div class="businessInfoWindow_cubesArea_row">
+					<a class="invitation_option_click ui-link" id="waze_href" style="color:#262626; text-decoration:none;" href="waze://?q=&lt;אדל אירועים פלוטיצקי ראשון לציון&gt;">
+						<div class="businessInfoWindow_cube">
+							<div class="businessInfoWindow_cube_title">
+								נווט
+							</div>
+							<div class="businessInfoWindow_cube_icon">
+								<img src="photos/Icones/d_waze.png">
+							</div>
+						</div>
+					</a>
+				
+					<a class="invitation_option_click ui-link" id="telephone_href" style="color:#262626; text-decoration:none;" href="tel:053-9386646">
+						<div class="businessInfoWindow_cube">
+							<div class="businessInfoWindow_cube_title">
+								חייג
+							</div>
+							<div class="businessInfoWindow_cube_icon">
+								<img src="photos/Icones/d_call.png">
+							</div>
+						</div>
+					</a>
+				</div>				
+				
+				
+				<div class="businessInfoWindow_cubesArea_row" style="margin-top:24px;">
+					<a class="invitation_option_click ui-link" id="website_href" style="color:#262626; text-decoration:none;" href="https://10comm.com/biz/adel-events?invt=1" target="_blank">
+						<div class="businessInfoWindow_cube">
+							<div class="businessInfoWindow_cube_title">
+								אתר
+							</div>
+							<div class="businessInfoWindow_cube_icon">
+								<img src="photos/Icones/d_home.png">
+							</div>
+						</div>
+					</a>
+					<a class="invitation_option_click ui-link" id="facebook_href" style="color:#262626; text-decoration:none;" href=" https://www.facebook.com/adelevents/" target="_blank">
+						<div class="businessInfoWindow_cube">
+							<div class="businessInfoWindow_cube_title">
+								פייסבוק
+							</div>
+							<div class="businessInfoWindow_cube_icon">
+								<img src="photos/Icones/d_fb.png">
+							</div>
+						</div>
+					</a>
+				</div>
+				
+			</div>	
+			
+			<!--
+			<div id="businessInfoWindow_bottom_text">
+				- מידע ופרטים - 
+			</div>
+			-->
+			
+		</div>
+		
+		
+		
+				
+					
+				
+		
+				
+		<script>
+			window.ajax_data = {
+				site_url: 'https://10comm.com/',
+				request_uri: '/Invitation.php?token=1xifUCVE'
+			}
+		</script>
+		
+		
+		<div id="contentWrapper" style="width: 660px;">
+			
+			<div id="topTitle">			
+				<font color="#000033" size="5">הזמנה לברית</font>				<!--
+				<div id="edit_topTitle">
+					<img src="photos/edit_new.png" style="width:22px; height:28x;margin-top:3px;"/>
+				</div>
+				-->
+			</div>
+
+			
+						<div id="coverImage">
+				<div id="the_main_image" style="background-image:url(https://10comm.com/photos/invitationimages/TttDMGo_0e6fcc83-96e2-445e-ab59-f2657c58b256.jpeg?rand=70531); background-position: 50% 26%;     transform: rotate(0deg);">
+				</div>
+				
+				
+							<div id="alert_aprroveArive" style="display: none; bottom: 15px;">
+								אנא אשרו הגעתכם
+							</div>
+							<div id="alert_aprroveArive_success" style="display: none; bottom: -100px;">
+							
+							</div>
+							<div id="moving_arrows1" style="display:none;">
+							
+							</div>
+							<div id="moving_arrows2" style="display:none;">
+							
+							</div>
+									
+			
+								<div id="elPos">
+				
+				</div>
+			</div>	
+			
+			<!--?php
+					if(isset($ownerOK)){
+						echo '
+							<div style="width:100%; height:1px; position:relative;margin-top:1px;"> 
+								<div id="needHelp">
+									סרטון הסבר
+								</div>
+								<div id="edit">עריגה/div>
+							</div>
+							<div style="width:100%; height:10px;"> 
+							</div>
+						';						
+					}
+			?-->
+			
+			
+			
+			<div id="content">			
+				<div style="text-align: start;"><div style="text-align: center;"><font color="#003333" size="4">בשעה טובה ומוצלחת נולד לנו בן</font></div><div style="text-align: center;"><font color="#003333" size="4">הנכם מוזמנים לאירוע הברית &nbsp;</font></div><div style="text-align: center;"><div style="text-align: center;"><font color="#003333" style="font-size: 1em;"><font size="4">שיתקיים בתאריך 15/12/2025 יום שני, בשעה 14:00</font></font></div><div style="text-align: center;"><font color="#003333" style="font-size: 1em;"><font size="4">ב<b>"אדל אירועים"</b></font></font></div>  <div style="text-align: center;"><span style="color: rgb(0, 51, 51); font-size: medium;">(פלוטיצקי 18, ראשון לציון)</span></div> <font color="#003333"><br></font></div><div style="text-align: center;"><font color="#003333" size="4">בואו עם הרבה מצב רוח :)</font></div><div style="text-align: center;"><span style="color: rgb(0, 51, 51); font-size: medium;">*לנוחותכם ניווט מהיר לאירוע עם ווייז</span></div></div><div style="text-align: center;"><br></div> <div style="text-align: center;"><span style="color: rgb(0, 51, 51); font-size: medium;">ניתן לחנות בחניון תת קרקעי של האולם ללא תשלום.</span></div> <div style="text-align: center;"><br></div><div style="text-align: center;"><font size="4" color="#003333">נשמח לראותכם בין אורחינו</font></div><div style="text-align: center;"><font color="#003333" size="4">יאנה ואוראל צרור</font></div><div style="text-align: center;"><br></div><div style="text-align: center;"><font size="3" color="#000033"><b>אנא אשרו הגעתכם בתחתית ההזמנה</b></font></div>			</div>
+
+						
+						
+			<div id="borderLine">			
+				
+			</div>
+			
+			
+			<div id="bottomContent">
+			
+				<div id="bottomBar">
+				
+								
+
+					
+								<!--div class="invitation_option_click" id="info">
+									<div id="info_text">
+										מידע ופרטים
+									</div>
+									<div id="info_img">
+										<img src="photos/Icones/d_info.png" style="height:28px;width:28px;margin-top:9px;border-radius:14px;opacity:0.85;" />
+									</div>
+								</div-->
+												
+					
+					
+					<a class="invitation_option_click ui-link" id="wazeButton_href" style="color:#161616;" href="waze://?q=&lt;אדל אירועים פלוטיצקי ראשון לציון&gt;">
+						<div id="waze">
+							<div id="waze_text">
+								ניווט למקום
+							</div>
+							<div id="waze_img">
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.71 122.88" style="enable-background:new 0 0 122.71 122.88" xml:space="preserve"><g><path class="st0" d="M55.14,104.21c4.22,0,8.44,0.19,12.66-0.09c3.84-0.19,7.88-0.56,11.63-1.5c29.82-7.31,45.76-40.23,32.72-68.07 C104.27,17.76,90.77,8.19,72.3,6.22c-14.16-1.5-26.82,2.72-37.51,12.28c-10.5,9.47-15.94,21.28-16.31,35.44 c-0.09,3.28,0,6.66,0,9.94C18.38,71.02,14.35,76.55,7.5,78.7c-0.09,0-0.28,0.19-0.38,0.19c2.63,6.94,13.31,17.16,19.97,19.69 C35.45,87.14,52.32,91.18,55.14,104.21L55.14,104.21z"></path><path d="M54.95,110.49c-1.03,4.69-3.56,8.16-7.69,10.31c-5.25,2.72-10.6,2.63-15.57-0.56c-5.16-3.28-7.41-8.25-7.03-14.35 c0.09-1.03-0.19-1.41-1.03-1.88c-9.1-4.78-16.31-11.44-21.28-20.44c-0.94-1.78-1.69-3.66-2.16-5.63c-0.66-2.72,0.38-4.03,3.19-4.31 c3.38-0.38,6.38-1.69,7.88-4.88c0.66-1.41,1.03-3.09,1.03-4.69c0.19-4.03,0-8.06,0.19-12.1c1.03-15.57,7.5-28.5,19.32-38.63 C42.67,3.97,55.42-0.43,69.76,0.03c25.04,0.94,46.51,18.57,51.57,43.23c4.59,22.32-2.34,40.98-20.07,55.51 c-1.03,0.84-2.16,1.69-3.38,2.44c-0.66,0.47-0.84,0.84-0.56,1.59c2.34,7.13-0.94,15-7.5,18.38c-8.91,4.41-19.22-0.09-21.94-9.66 c-0.09-0.38-0.56-0.84-0.84-0.84C63.11,110.4,59.07,110.49,54.95,110.49L54.95,110.49z M55.14,104.21c4.22,0,8.44,0.19,12.66-0.09 c3.84-0.19,7.88-0.56,11.63-1.5c29.82-7.31,45.76-40.23,32.72-68.07C104.27,17.76,90.77,8.19,72.3,6.22 c-14.16-1.5-26.82,2.72-37.51,12.28c-10.5,9.47-15.94,21.28-16.31,35.44c-0.09,3.28,0,6.66,0,9.94 C18.38,71.02,14.35,76.55,7.5,78.7c-0.09,0-0.28,0.19-0.38,0.19c2.63,6.94,13.31,17.16,19.97,19.69 C35.45,87.14,52.32,91.18,55.14,104.21L55.14,104.21z"></path><path d="M74.92,79.74c-11.07-0.56-18.38-4.97-23.07-13.78c-1.13-2.16-0.09-4.31,2.06-4.78c1.31-0.28,2.53,0.66,3.47,2.16 c1.22,1.88,2.44,3.75,4.03,5.25c8.81,8.34,23.25,5.72,28.79-5.06c0.66-1.31,1.5-2.34,3.09-2.34c2.34,0.09,3.66,2.44,2.63,4.59 c-2.91,5.91-7.5,10.22-13.69,12.28C79.51,78.99,76.7,79.36,74.92,79.74L74.92,79.74z"></path><path d="M55.32,48.98c-3.38,0-6.09-2.72-6.09-6.09s2.72-6.09,6.09-6.09s6.09,2.72,6.09,6.09C61.42,46.17,58.7,48.98,55.32,48.98 L55.32,48.98z"></path><path d="M98.27,42.79c0,3.38-2.72,6.09-6,6.19c-3.38,0-6.09-2.63-6.09-6.09c0-3.38,2.63-6.09,6-6.19 C95.46,36.7,98.17,39.42,98.27,42.79L98.27,42.79z"></path></g></svg>
+							</div>
+						</div>
+					</a>
+					
+				</div>
+				
+				<!--
+				<a style="color:#161616;" href="whatsapp://send?text=" data-action="share/whatsapp/share"> 
+					<div id="reminder">
+						שלח הודעת תזכורת למוזמנים
+					</div>
+				</a>
+				-->
+				
+				<div id="approveWrapper">
+				
+					<div id="approvTitle" class="">
+						האם הינך מגיע?
+					</div>
+										
+					<div id="approve_cube">
+						<div class="approve_cube_status" id="approve_cube_yes" style="background: rgb(36, 177, 89); color: rgb(255, 255, 255); border: 1px solid rgb(70, 142, 240);">
+							מגיע
+						</div>
+						<div class="approve_cube_status" id="approve_cube_maybe" style="background-color: rgb(255, 255, 255); color: rgb(84, 84, 84); border: 1px solid rgb(70, 142, 240);">
+							אולי?
+						</div>
+						<div class="approve_cube_status" id="approve_cube_no" style="background-color: rgb(255, 255, 255); color: rgb(84, 84, 84); border: 1px solid rgb(70, 142, 240);">
+							לא אגיע
+						</div>
+					</div>
+					
+					
+					<div id="guest_details">
+						
+									<div id="approve_fullName" class="approveRow" style="margin-top:14px;">
+										<input type="text" id="inp_fullName" name="inp_fullName" class="approveRow_inp" style="padding-right:5px;" data-role="none" placeholder="* שם מלא:">
+									</div>
+									
+									<div id="approve_telephone" class="approveRow">
+										<input type="tel" id="inp_telephone" name="inp_telephone" class="approveRow_inp" style="padding-right:5px;direction:ltr;text-align:right;" data-role="none" placeholder=":נייד *">
+									</div>
+													</div>
+					
+					
+					<div id="approveContent" style="display: block;">
+					
+						<div class="approveContent_cube">
+							<div id="minus">
+								-
+							</div>
+						</div>
+					
+						<div class="approveContent_cube" style="width:34%;">
+							
+										<div id="approveInput">
+											<input data-role="none" id="numOfConfirms" type="tel" value="כמה?" name="numOfConfirms" style="font-size: 16px;">
+										</div>
+															</div>
+						
+						
+						<div class="approveContent_cube">
+							<div id="plus">
+								+
+							</div>
+						</div>
+						
+					</div>
+					
+					<div id="sendNumberTitle" style="display: block;">
+						(כמות מגיעים)
+					</div>
+				
+					
+					
+					
+					<div id="addBlessing" style="display: block;">הוספת ברכה/הערה</div>
+					<div id="blessingContent" style="display: none;">						
+						  <textarea placeholder="רשמו ברכה / הערה לאישור הגעה..." name="blessing" id="blessing" style="width: 99%; height: 27px;" class="ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow"></textarea>
+					</div>
+						
+					
+					
+					<div id="sendNumber">
+								<span>שליחת אישור הגעה</span>
+								<div><svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 511 512.32"><path fill="#fff" d="M9.72 185.88L489.19 1.53c3.64-1.76 7.96-2.08 12.03-.53 7.83 2.98 11.76 11.74 8.78 19.57L326.47 502.56h-.02c-1.33 3.49-3.94 6.5-7.57 8.25-7.54 3.63-16.6.47-20.23-7.06l-73.78-152.97 146.67-209.97-209.56 146.3L8.6 213.64a15.117 15.117 0 01-7.6-8.25c-2.98-7.79.93-16.53 8.72-19.51z"></path></svg></div>
+						</div>
+					
+					<div id="loader">
+						<img src="photos/loader.gif" style="width:20px; height:20px;display:none;">
+					</div>
+					
+					<div id="sendNumber_alert">
+						
+					</div>
+				
+				</div>
+
+				
+				
+				<!--
+				<a id="WhiteLabel_href" target="_blank" href="/WhiteLabel.php?token=">
+					<div id="WhiteLabel">
+						אורחים יקרים!
+						</br>
+						בהתאם להנחיות הממשלה, ההשתתפות באירוע מותרת למוזמנים בעלי תו ירוק או למוזמנים וילדים אשר יציגו בדיקת קורונה שלילית מה- 48 שעות האחרונות.
+						
+						</br>
+						אנא היכנסו
+						<span style="color:#4d7ad0; font-weight:700;"><u>לקישור הבא</u></span> ואשרו שהנכם עומדים בתקנות. תודה.
+					</div>
+				</a>
+				-->
+				
+				
+								
+											
+								
+				
+				
+			
+				
+				
+				
+			
+			</div>
+			
+		</div>
+		
+		
+				
+		
+		
+		
+				
+		<div class="borderDiv" style="display:none;">
+			
+		</div>
+		
+		
+		
+							
+						<div id="tencomm_bottomBar">
+							<a href="/?invt=1" target="_blank" class="ui-link">						
+								<div id="tencomm_bottomBar_logo">
+									<img src="photos/new_logo.png">
+								</div>
+								</a><div id="tencomm_bottomBar_text"><a href="/?invt=1" target="_blank" class="ui-link">
+									</a><a href="https://10comm.com/?invt=1" target="_blank" class="ui-link">
+										למצוא אולם לאירוע בקלות!
+									</a>
+								</div>
+							
+							<div style="text-decoration:none;margin-top:20px;">
+								לתמיכה: <a style="text-decoration:none;" href="tel:072-397-7368" class="ui-link">072-397-7368</a>						
+								<span>© כל הזכויות שמורות</span>							
+							</div>			
+						</div>				
+					
+				
+		
+			
+  
+		
+		
+		
+		
+		<input type="hidden" style="display:none;" id="inpToken" name="inpToken" value="1xifUCVE">
+		<input type="hidden" style="display:none;" name="inpSubToken" value="">
+		<input type="hidden" style="display:none;" name="inpOwnerToken" value="">
+	
+		<input type="file" name="inp_coverImage" id="inp_coverImage" data-role="none" style="display:none;" onchange="setImage(this); return false">
+
+	</form>
+
+		
+	<script>
+		const Confettiful = function(el) {
+			this.el = el;
+			this.containerEl = null;
+
+			this.confettiFrequency = 3;
+			this.confettiColors = ['#fce18a', '#ff726d', '#b48def', '#f4306d'];
+			this.confettiAnimations = ['slow', 'medium', 'fast'];
+
+			this._setupElements();
+			this._renderConfetti();
+		};
+
+		Confettiful.prototype._setupElements = function() {
+			const containerEl = document.createElement('div');
+			const elPosition = this.el.style.position;
+
+			if (elPosition !== 'relative' || elPosition !== 'absolute') {
+				this.el.style.position = 'absolute';
+			}
+
+			containerEl.classList.add('confetti-container');
+
+			this.el.appendChild(containerEl);
+
+			this.containerEl = containerEl;
+		};
+
+		Confettiful.prototype._renderConfetti = function() {
+			this.confettiInterval = setInterval(() => {
+			const confettiEl = document.createElement('div');
+			const confettiSize = (Math.floor(Math.random() * 3) + 7) + 'px';
+			const confettiBackground = this.confettiColors[Math.floor(Math.random() * this.confettiColors.length)];
+			const confettiLeft = (Math.floor(Math.random() * this.el.offsetWidth)) + 'px';
+			const confettiAnimation = this.confettiAnimations[Math.floor(Math.random() * this.confettiAnimations.length)];
+
+			confettiEl.classList.add('confetti', 'confetti--animation-' + confettiAnimation);
+			confettiEl.style.left = confettiLeft;
+			confettiEl.style.width = confettiSize;
+			confettiEl.style.height = confettiSize;
+			confettiEl.style.backgroundColor = confettiBackground;
+
+			confettiEl.removeTimeout = setTimeout(function() {
+				confettiEl.parentNode.removeChild(confettiEl);
+			}, 3000);
+
+			this.containerEl.appendChild(confettiEl);
+			}, 25);
+		};
+
+		window.confettiful = new Confettiful(document.querySelector('.js-container-confetti'));
+	</script>
+	
+
+
+</div><div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1 style="font-size: 26px;">loading</h1></div></body>
