@@ -39,7 +39,7 @@ const CONFIG = {
     },
 
     // Additional Notes (leave empty string if none)
-    additionalNotes: 'ניתן לחנות בחניון תת קרקעי של האולם ללא תשלום.',
+    additionalNotes: 'נסיה שרה היא מתוקה ומיוחדת, נשמח אם תביאו איתכם חיוך גדול ואהבה רבה!',
 
     // RSVP Form endpoint (Vercel serverless function)
     // The actual Google Script URL is stored securely in Vercel environment variables
