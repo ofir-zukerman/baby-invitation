@@ -23,7 +23,7 @@ const CONFIG = {
 
     // Parents
     parents: {
-        names: 'קורל ואופיר צוקרמן',
+        names: 'משפחת צוקרמן',
     },
 
     // Images
