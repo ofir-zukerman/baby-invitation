@@ -14,9 +14,9 @@ const CONFIG = {
 
     // Venue
     venue: {
-        name: 'West אירועים',
+        name: 'WEST-EVENTS אירועי הוטיק',
         address: 'עליית הנוער 1, ראשון לציון',
-        wazeQuery: 'WEST EVENT ראשון לציון',
+        wazeQuery: 'WEST-EVENTS אירועי הוטיק',
         phone: '052-3630976',      // Venue phone number
         image: './images/venue.jpg', // Venue image (optional)
     },
