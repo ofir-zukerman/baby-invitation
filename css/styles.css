@@ -1294,6 +1294,49 @@ body {
     margin-bottom: 20px;
 }
 
+.success-details {
+    background: rgba(255, 182, 193, 0.15);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+.success-details:empty {
+    display: none;
+}
+
+.update-rsvp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 2px solid var(--pink-light);
+    color: var(--pink-dark);
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    margin-top: 15px;
+}
+
+.update-rsvp-btn:hover {
+    background: var(--pink-pastel);
+    border-color: var(--pink-primary);
+    transform: translateY(-2px);
+}
+
+.update-rsvp-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+}
+
 .success-hearts {
     display: flex;
     justify-content: center;

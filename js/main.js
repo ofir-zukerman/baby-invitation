@@ -86,6 +86,38 @@ let state = {
 };
 
 // ============================================
+// LOCAL STORAGE - RSVP CACHING
+// ============================================
+
+const STORAGE_KEY = 'rsvp_data';
+
+function saveRSVPToStorage(data) {
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch (e) {
+        console.warn('Could not save to localStorage:', e);
+    }
+}
+
+function getRSVPFromStorage() {
+    try {
+        const data = localStorage.getItem(STORAGE_KEY);
+        return data ? JSON.parse(data) : null;
+    } catch (e) {
+        console.warn('Could not read from localStorage:', e);
+        return null;
+    }
+}
+
+function clearRSVPStorage() {
+    try {
+        localStorage.removeItem(STORAGE_KEY);
+    } catch (e) {
+        console.warn('Could not clear localStorage:', e);
+    }
+}
+
+// ============================================
 // DOM ELEMENTS
 // ============================================
 
@@ -124,6 +156,10 @@ function cacheElements() {
     elements.blessingContainer = document.getElementById('blessing-container');
     elements.submitBtn = document.getElementById('submit-btn');
     elements.successMessage = document.getElementById('success-message');
+    elements.successTitle = document.getElementById('success-title');
+    elements.successSubtitle = document.getElementById('success-subtitle');
+    elements.successDetails = document.getElementById('success-details');
+    elements.updateRsvpBtn = document.getElementById('update-rsvp-btn');
 
     // Inputs
     elements.fullNameInput = document.getElementById('full-name');
@@ -162,8 +198,131 @@ function init() {
     initScrollAnimations();
     triggerInitialAnimations();
 
+    // Check for cached RSVP data (returning user)
+    checkForCachedRSVP();
+
     if (CONFIG.animations.confettiOnLoad) {
         setTimeout(() => launchConfetti(40), 1000);
+    }
+}
+
+// ============================================
+// CHECK FOR RETURNING USER
+// ============================================
+
+function checkForCachedRSVP() {
+    const savedData = getRSVPFromStorage();
+    if (savedData) {
+        showReturningUserState(savedData);
+    }
+}
+
+function showReturningUserState(data) {
+    state.formSubmitted = true;
+    state.attendance = data.attendance;
+    state.guestCount = data.guestCount || 1;
+
+    // Hide form elements
+    if (elements.formFields) elements.formFields.style.display = 'none';
+    if (elements.submitBtn) elements.submitBtn.style.display = 'none';
+
+    const attendanceSection = document.querySelector('.attendance-selection');
+    if (attendanceSection) attendanceSection.style.display = 'none';
+
+    // Update success message for returning user
+    if (elements.successTitle) {
+        elements.successTitle.textContent = `שלום ${data.name}! 👋`;
+    }
+    if (elements.successSubtitle) {
+        elements.successSubtitle.textContent = 'כבר קיבלנו את אישור ההגעה שלך';
+    }
+
+    // Show saved details
+    if (elements.successDetails) {
+        const statusText = getStatusText(data.attendanceStatus);
+        const guestText = data.guestCount > 0 ? `${data.guestCount} אורחים` : '';
+
+        let detailsHtml = `<strong>סטטוס:</strong> ${statusText}`;
+        if (guestText) {
+            detailsHtml += `<br><strong>מספר אורחים:</strong> ${guestText}`;
+        }
+        if (data.blessing) {
+            detailsHtml += `<br><strong>ברכה:</strong> ${data.blessing}`;
+        }
+
+        elements.successDetails.innerHTML = detailsHtml;
+    }
+
+    // Show success state
+    if (elements.successMessage) {
+        elements.successMessage.classList.add('visible');
+    }
+}
+
+function getStatusText(status) {
+    const statusMap = {
+        'coming': '✅ מגיע/ה',
+        'maybe': '❓ אולי',
+        'not-coming': '❌ לא מגיע/ה',
+        'מגיע/ה': '✅ מגיע/ה',
+        'אולי': '❓ אולי',
+        'לא מגיע/ה': '❌ לא מגיע/ה'
+    };
+    return statusMap[status] || status;
+}
+
+function showFormForUpdate(savedData) {
+    state.formSubmitted = false;
+
+    // Show form elements
+    if (elements.formFields) elements.formFields.style.display = 'flex';
+    if (elements.submitBtn) elements.submitBtn.style.display = 'flex';
+
+    const attendanceSection = document.querySelector('.attendance-selection');
+    if (attendanceSection) attendanceSection.style.display = 'flex';
+
+    // Hide success state
+    if (elements.successMessage) {
+        elements.successMessage.classList.remove('visible');
+    }
+
+    // Pre-fill form with saved data
+    if (savedData) {
+        if (elements.fullNameInput) elements.fullNameInput.value = savedData.name || '';
+        if (elements.phoneInput) elements.phoneInput.value = savedData.phone || '';
+        if (elements.blessingInput) elements.blessingInput.value = savedData.blessing || '';
+
+        // Set guest count
+        state.guestCount = savedData.guestCount || 1;
+        updateGuestDisplay();
+
+        // Select attendance button
+        if (savedData.attendance) {
+            const btnMap = {
+                'coming': elements.btnComing,
+                'maybe': elements.btnMaybe,
+                'not-coming': elements.btnNotComing
+            };
+            const btn = btnMap[savedData.attendance];
+            if (btn) {
+                selectAttendance(savedData.attendance, btn);
+            }
+        }
+
+        // Show blessing if exists
+        if (savedData.blessing && elements.blessingToggle) {
+            state.blessingExpanded = true;
+            elements.blessingToggle.classList.add('active');
+            if (elements.blessingContainer) {
+                elements.blessingContainer.classList.add('expanded');
+            }
+        }
+    }
+
+    // Scroll to form
+    const rsvpSection = document.querySelector('.rsvp-section');
+    if (rsvpSection) {
+        rsvpSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
 
@@ -365,6 +524,14 @@ function setupEventListeners() {
     if (elements.wazeButton) elements.wazeButton.addEventListener('click', openWaze);
     if (elements.shareButton) elements.shareButton.addEventListener('click', shareInvitation);
     if (elements.calendarButton) elements.calendarButton.addEventListener('click', addToCalendar);
+
+    // Update RSVP button (for returning users)
+    if (elements.updateRsvpBtn) {
+        elements.updateRsvpBtn.addEventListener('click', () => {
+            const savedData = getRSVPFromStorage();
+            showFormForUpdate(savedData);
+        });
+    }
 }
 
 // ============================================
@@ -543,6 +710,18 @@ async function handleSubmit(e) {
 function showSuccess() {
     state.formSubmitted = true;
 
+    // Save to localStorage for returning users
+    const dataToSave = {
+        name: elements.fullNameInput?.value.trim() || '',
+        phone: elements.phoneInput?.value.trim() || '',
+        attendance: state.attendance,
+        attendanceStatus: state.attendance,
+        guestCount: state.attendance === 'not-coming' ? 0 : state.guestCount,
+        blessing: elements.blessingInput?.value.trim() || '',
+        submittedAt: new Date().toISOString()
+    };
+    saveRSVPToStorage(dataToSave);
+
     // Hide form, show success
     if (elements.formFields) elements.formFields.style.display = 'none';
     if (elements.submitBtn) elements.submitBtn.style.display = 'none';
@@ -550,6 +729,17 @@ function showSuccess() {
     // Hide attendance buttons
     const attendanceSection = document.querySelector('.attendance-selection');
     if (attendanceSection) attendanceSection.style.display = 'none';
+
+    // Update success message
+    if (elements.successTitle) {
+        elements.successTitle.textContent = 'תודה רבה!';
+    }
+    if (elements.successSubtitle) {
+        elements.successSubtitle.textContent = 'קיבלנו את אישור ההגעה שלכם';
+    }
+    if (elements.successDetails) {
+        elements.successDetails.innerHTML = '';
+    }
 
     if (elements.successMessage) {
         elements.successMessage.classList.add('visible');
