@@ -9,7 +9,7 @@ const CONFIG = {
         babyGender: `It's a GIRL !`,     // 'girl' or 'boy'
         date: '01/01/2026',
         dayOfWeek: 'יום חמישי',
-        time: '19:30',
+        time: '20:00',
     },
 
     // Venue
