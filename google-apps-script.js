@@ -34,6 +34,9 @@ function setupSheet() {
   sheet.setColumnWidth(5, 100);  // כמות אורחים
   sheet.setColumnWidth(6, 250);  // ברכה
 
+  // Set phone column (C) to Plain Text format to preserve leading zeros
+  sheet.getRange('C:C').setNumberFormat('@');
+
   // Freeze header row
   sheet.setFrozenRows(1);
 
@@ -45,8 +48,39 @@ function setupSheet() {
 }
 
 /**
+ * Normalizes phone number for comparison
+ * Removes dashes, spaces, and apostrophes
+ */
+function normalizePhone(phone) {
+  return String(phone || '').replace(/[-\s']/g, '');
+}
+
+/**
+ * Finds row index by phone number
+ * Returns row number (1-indexed) or -1 if not found
+ */
+function findRowByPhone(sheet, phone) {
+  var normalizedSearch = normalizePhone(phone);
+  if (!normalizedSearch) return -1;
+
+  var data = sheet.getDataRange().getValues();
+
+  // Start from row 2 (skip header)
+  for (var i = 1; i < data.length; i++) {
+    var cellPhone = normalizePhone(data[i][2]); // Column C (index 2)
+    if (cellPhone === normalizedSearch) {
+      return i + 1; // Convert to 1-indexed row number
+    }
+  }
+
+  return -1;
+}
+
+/**
  * Handles POST requests from the invitation website
  * This function is called automatically when form is submitted
+ * If phone exists: updates the existing row
+ * If phone is new: creates a new row
  */
 function doPost(e) {
   try {
@@ -57,23 +91,41 @@ function doPost(e) {
     var now = new Date();
     var formattedDate = Utilities.formatDate(now, 'Asia/Jerusalem', 'dd/MM/yyyy HH:mm');
 
-    // Add new row with the form data
-    sheet.appendRow([
+    // Normalize phone - remove dashes/spaces, add apostrophe to keep as text
+    var rawPhone = normalizePhone(data.phone);
+    var phoneForSheet = "'" + rawPhone; // Apostrophe forces text format, preserves leading zero
+
+    // Prepare row data
+    var rowData = [
       formattedDate,
       data.name || '',
-      data.phone || '',
+      phoneForSheet,
       data.attendance || '',
       data.guests || 0,
       data.blessing || ''
-    ]);
+    ];
 
-    // Style the new row (optional - for better readability)
-    var lastRow = sheet.getLastRow();
-    var newRowRange = sheet.getRange(lastRow, 1, 1, 6);
-    newRowRange.setHorizontalAlignment('right');
+    // Check if phone already exists
+    var existingRow = findRowByPhone(sheet, rawPhone);
+    var isUpdate = existingRow > 0;
+    var targetRow;
+
+    if (isUpdate) {
+      // Update existing row
+      targetRow = existingRow;
+      sheet.getRange(targetRow, 1, 1, 6).setValues([rowData]);
+    } else {
+      // Append new row
+      sheet.appendRow(rowData);
+      targetRow = sheet.getLastRow();
+    }
+
+    // Style the row
+    var rowRange = sheet.getRange(targetRow, 1, 1, 6);
+    rowRange.setHorizontalAlignment('right');
 
     // Color code based on attendance status
-    var statusCell = sheet.getRange(lastRow, 4);
+    var statusCell = sheet.getRange(targetRow, 4);
     if (data.attendance === 'מגיע/ה') {
       statusCell.setBackground('#90EE90');  // Light green
     } else if (data.attendance === 'אולי') {
@@ -86,8 +138,9 @@ function doPost(e) {
     return ContentService
       .createTextOutput(JSON.stringify({
         success: true,
-        message: 'RSVP saved successfully',
-        row: lastRow
+        message: isUpdate ? 'RSVP updated successfully' : 'RSVP saved successfully',
+        row: targetRow,
+        isUpdate: isUpdate
       }))
       .setMimeType(ContentService.MimeType.JSON);
 
@@ -126,6 +179,33 @@ function testAddRow() {
   Logger.log(result.getContent());
 
   SpreadsheetApp.getUi().alert('✅ שורת בדיקה נוספה בהצלחה!\n\nבדוק את הטבלה ומחק את השורה לפני השימוש האמיתי.');
+}
+
+/**
+ * Test function - tests the update functionality
+ * Run this after testAddRow to verify updates work
+ */
+function testUpdateRow() {
+  var testData = {
+    postData: {
+      contents: JSON.stringify({
+        name: 'בדיקה - ישראל ישראלי (עודכן)',
+        phone: '050-1234567', // Same phone as testAddRow
+        attendance: 'לא מגיע/ה',
+        guests: 0,
+        blessing: 'מצטערים, לא נוכל להגיע'
+      })
+    }
+  };
+
+  var result = doPost(testData);
+  var response = JSON.parse(result.getContent());
+
+  if (response.isUpdate) {
+    SpreadsheetApp.getUi().alert('✅ השורה עודכנה בהצלחה!\n\nבדוק שהשורה הקיימת עודכנה ולא נוספה שורה חדשה.');
+  } else {
+    SpreadsheetApp.getUi().alert('⚠️ נוספה שורה חדשה במקום עדכון.\n\nבדוק שמספר הטלפון תואם.');
+  }
 }
 
 /**
