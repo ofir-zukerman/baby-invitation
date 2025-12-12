@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,10 +30,13 @@
     <!-- Google Fonts - Elegant Pairing -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Heebo:wght@300;400;500;600;700&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Heebo:wght@300;400;500;600;700&family=Amatic+SC:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <!-- Animated Background Layer -->
     <div class="background-layer">
@@ -65,16 +69,16 @@
 
             <!-- Glow filter -->
             <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                <feGaussianBlur stdDeviation="3" result="coloredBlur" />
                 <feMerge>
-                    <feMergeNode in="coloredBlur"/>
-                    <feMergeNode in="SourceGraphic"/>
+                    <feMergeNode in="coloredBlur" />
+                    <feMergeNode in="SourceGraphic" />
                 </feMerge>
             </filter>
 
             <!-- Soft shadow -->
             <filter id="soft-shadow" x="-50%" y="-50%" width="200%" height="200%">
-                <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.1"/>
+                <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.1" />
             </filter>
         </defs>
     </svg>
@@ -88,51 +92,56 @@
             <div class="floating-decorations">
                 <!-- Animated Cloud SVGs -->
                 <svg class="cloud cloud-1" viewBox="0 0 200 100" data-parallax="0.1">
-                    <ellipse cx="60" cy="60" rx="50" ry="30" fill="rgba(255,255,255,0.8)"/>
-                    <ellipse cx="100" cy="50" rx="60" ry="40" fill="rgba(255,255,255,0.9)"/>
-                    <ellipse cx="150" cy="60" rx="45" ry="28" fill="rgba(255,255,255,0.85)"/>
+                    <ellipse cx="60" cy="60" rx="50" ry="30" fill="rgba(255,255,255,0.8)" />
+                    <ellipse cx="100" cy="50" rx="60" ry="40" fill="rgba(255,255,255,0.9)" />
+                    <ellipse cx="150" cy="60" rx="45" ry="28" fill="rgba(255,255,255,0.85)" />
                 </svg>
 
                 <svg class="cloud cloud-2" viewBox="0 0 180 90" data-parallax="0.15">
-                    <ellipse cx="50" cy="55" rx="40" ry="25" fill="rgba(255,255,255,0.7)"/>
-                    <ellipse cx="90" cy="45" rx="55" ry="35" fill="rgba(255,255,255,0.8)"/>
-                    <ellipse cx="140" cy="55" rx="35" ry="22" fill="rgba(255,255,255,0.75)"/>
+                    <ellipse cx="50" cy="55" rx="40" ry="25" fill="rgba(255,255,255,0.7)" />
+                    <ellipse cx="90" cy="45" rx="55" ry="35" fill="rgba(255,255,255,0.8)" />
+                    <ellipse cx="140" cy="55" rx="35" ry="22" fill="rgba(255,255,255,0.75)" />
                 </svg>
 
                 <!-- Floating Hearts -->
                 <svg class="floating-heart heart-1" viewBox="0 0 32 32" data-parallax="0.2">
-                    <path fill="url(#heart-gradient)" d="M16 28.72l-1.45-1.32C6.4 20.18 1 15.22 1 9.5 1 4.92 4.58 1 9.5 1c2.54 0 5.04 1.18 6.5 3.04C17.46 2.18 19.96 1 22.5 1 27.42 1 31 4.92 31 9.5c0 5.72-5.4 10.68-13.55 17.9L16 28.72z"/>
+                    <path fill="url(#heart-gradient)"
+                        d="M16 28.72l-1.45-1.32C6.4 20.18 1 15.22 1 9.5 1 4.92 4.58 1 9.5 1c2.54 0 5.04 1.18 6.5 3.04C17.46 2.18 19.96 1 22.5 1 27.42 1 31 4.92 31 9.5c0 5.72-5.4 10.68-13.55 17.9L16 28.72z" />
                 </svg>
 
                 <svg class="floating-heart heart-2" viewBox="0 0 32 32" data-parallax="0.25">
-                    <path fill="url(#heart-gradient)" d="M16 28.72l-1.45-1.32C6.4 20.18 1 15.22 1 9.5 1 4.92 4.58 1 9.5 1c2.54 0 5.04 1.18 6.5 3.04C17.46 2.18 19.96 1 22.5 1 27.42 1 31 4.92 31 9.5c0 5.72-5.4 10.68-13.55 17.9L16 28.72z"/>
+                    <path fill="url(#heart-gradient)"
+                        d="M16 28.72l-1.45-1.32C6.4 20.18 1 15.22 1 9.5 1 4.92 4.58 1 9.5 1c2.54 0 5.04 1.18 6.5 3.04C17.46 2.18 19.96 1 22.5 1 27.42 1 31 4.92 31 9.5c0 5.72-5.4 10.68-13.55 17.9L16 28.72z" />
                 </svg>
 
                 <svg class="floating-heart heart-3" viewBox="0 0 32 32" data-parallax="0.18">
-                    <path fill="url(#heart-gradient)" d="M16 28.72l-1.45-1.32C6.4 20.18 1 15.22 1 9.5 1 4.92 4.58 1 9.5 1c2.54 0 5.04 1.18 6.5 3.04C17.46 2.18 19.96 1 22.5 1 27.42 1 31 4.92 31 9.5c0 5.72-5.4 10.68-13.55 17.9L16 28.72z"/>
+                    <path fill="url(#heart-gradient)"
+                        d="M16 28.72l-1.45-1.32C6.4 20.18 1 15.22 1 9.5 1 4.92 4.58 1 9.5 1c2.54 0 5.04 1.18 6.5 3.04C17.46 2.18 19.96 1 22.5 1 27.42 1 31 4.92 31 9.5c0 5.72-5.4 10.68-13.55 17.9L16 28.72z" />
                 </svg>
 
                 <!-- Floating Stars -->
                 <svg class="floating-star star-1" viewBox="0 0 24 24" data-parallax="0.3">
-                    <path fill="url(#star-gradient)" d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4 2.3-7.4-6-4.6h7.6z"/>
+                    <path fill="url(#star-gradient)"
+                        d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4 2.3-7.4-6-4.6h7.6z" />
                 </svg>
 
                 <svg class="floating-star star-2" viewBox="0 0 24 24" data-parallax="0.22">
-                    <path fill="url(#star-gradient)" d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4 2.3-7.4-6-4.6h7.6z"/>
+                    <path fill="url(#star-gradient)"
+                        d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4 2.3-7.4-6-4.6h7.6z" />
                 </svg>
 
                 <!-- Moon -->
                 <svg class="moon" viewBox="0 0 100 100" data-parallax="0.05">
                     <defs>
                         <radialGradient id="moon-gradient" cx="30%" cy="30%">
-                            <stop offset="0%" style="stop-color:#FFFACD"/>
-                            <stop offset="100%" style="stop-color:#FFE4B5"/>
+                            <stop offset="0%" style="stop-color:#FFFACD" />
+                            <stop offset="100%" style="stop-color:#FFE4B5" />
                         </radialGradient>
                     </defs>
-                    <circle cx="50" cy="50" r="45" fill="url(#moon-gradient)" filter="url(#glow)"/>
-                    <circle cx="35" cy="35" r="8" fill="rgba(255,235,180,0.5)"/>
-                    <circle cx="60" cy="55" r="5" fill="rgba(255,235,180,0.4)"/>
-                    <circle cx="45" cy="65" r="6" fill="rgba(255,235,180,0.45)"/>
+                    <circle cx="50" cy="50" r="45" fill="url(#moon-gradient)" filter="url(#glow)" />
+                    <circle cx="35" cy="35" r="8" fill="rgba(255,235,180,0.5)" />
+                    <circle cx="60" cy="55" r="5" fill="rgba(255,235,180,0.4)" />
+                    <circle cx="45" cy="65" r="6" fill="rgba(255,235,180,0.45)" />
                 </svg>
             </div>
 
@@ -141,11 +150,15 @@
                 <!-- Decorative Top Element -->
                 <div class="decorative-top">
                     <svg class="bow-svg" viewBox="0 0 120 60">
-                        <path class="bow-ribbon" d="M60 30 Q30 10 10 30 Q30 50 60 30" fill="#FFB6C1" stroke="#FF69B4" stroke-width="2"/>
-                        <path class="bow-ribbon" d="M60 30 Q90 10 110 30 Q90 50 60 30" fill="#FFB6C1" stroke="#FF69B4" stroke-width="2"/>
-                        <circle cx="60" cy="30" r="8" fill="#FF69B4"/>
-                        <path class="bow-tail" d="M55 38 Q50 55 45 58" stroke="#FF69B4" stroke-width="3" fill="none" stroke-linecap="round"/>
-                        <path class="bow-tail" d="M65 38 Q70 55 75 58" stroke="#FF69B4" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path class="bow-ribbon" d="M60 30 Q30 10 10 30 Q30 50 60 30" fill="#FFB6C1" stroke="#FF69B4"
+                            stroke-width="2" />
+                        <path class="bow-ribbon" d="M60 30 Q90 10 110 30 Q90 50 60 30" fill="#FFB6C1" stroke="#FF69B4"
+                            stroke-width="2" />
+                        <circle cx="60" cy="30" r="8" fill="#FF69B4" />
+                        <path class="bow-tail" d="M55 38 Q50 55 45 58" stroke="#FF69B4" stroke-width="3" fill="none"
+                            stroke-linecap="round" />
+                        <path class="bow-tail" d="M65 38 Q70 55 75 58" stroke="#FF69B4" stroke-width="3" fill="none"
+                            stroke-linecap="round" />
                     </svg>
                 </div>
 
@@ -158,51 +171,59 @@
                 <div class="baby-illustration" data-animate="scale-in">
                     <svg class="baby-svg" viewBox="0 0 200 200">
                         <!-- Baby blanket/swaddle -->
-                        <ellipse cx="100" cy="130" rx="70" ry="50" fill="#FFF0F5"/>
-                        <ellipse cx="100" cy="130" rx="65" ry="45" fill="#FFE4E1"/>
+                        <ellipse cx="100" cy="130" rx="70" ry="50" fill="#FFF0F5" />
+                        <ellipse cx="100" cy="130" rx="65" ry="45" fill="#FFE4E1" />
 
                         <!-- Blanket pattern -->
-                        <path d="M50 120 Q75 110 100 120 Q125 130 150 120" stroke="#FFB6C1" stroke-width="2" fill="none" opacity="0.5"/>
-                        <path d="M45 135 Q75 125 100 135 Q125 145 155 135" stroke="#FFB6C1" stroke-width="2" fill="none" opacity="0.5"/>
+                        <path d="M50 120 Q75 110 100 120 Q125 130 150 120" stroke="#FFB6C1" stroke-width="2" fill="none"
+                            opacity="0.5" />
+                        <path d="M45 135 Q75 125 100 135 Q125 145 155 135" stroke="#FFB6C1" stroke-width="2" fill="none"
+                            opacity="0.5" />
 
                         <!-- Baby face -->
-                        <circle cx="100" cy="85" r="40" fill="#FFEFD5"/>
-                        <circle cx="100" cy="85" r="38" fill="#FFE4C4"/>
+                        <circle cx="100" cy="85" r="40" fill="#FFEFD5" />
+                        <circle cx="100" cy="85" r="38" fill="#FFE4C4" />
 
                         <!-- Rosy cheeks -->
-                        <circle cx="78" cy="92" r="8" fill="#FFB6C1" opacity="0.4"/>
-                        <circle cx="122" cy="92" r="8" fill="#FFB6C1" opacity="0.4"/>
+                        <circle cx="78" cy="92" r="8" fill="#FFB6C1" opacity="0.4" />
+                        <circle cx="122" cy="92" r="8" fill="#FFB6C1" opacity="0.4" />
 
                         <!-- Eyes (closed, sleeping) -->
-                        <path d="M82 82 Q88 78 94 82" stroke="#8B7355" stroke-width="2" fill="none" stroke-linecap="round"/>
-                        <path d="M106 82 Q112 78 118 82" stroke="#8B7355" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <path d="M82 82 Q88 78 94 82" stroke="#8B7355" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M106 82 Q112 78 118 82" stroke="#8B7355" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
 
                         <!-- Eyelashes -->
-                        <path d="M84 80 L82 76" stroke="#8B7355" stroke-width="1" stroke-linecap="round"/>
-                        <path d="M88 78 L88 74" stroke="#8B7355" stroke-width="1" stroke-linecap="round"/>
-                        <path d="M92 80 L94 76" stroke="#8B7355" stroke-width="1" stroke-linecap="round"/>
-                        <path d="M108 80 L106 76" stroke="#8B7355" stroke-width="1" stroke-linecap="round"/>
-                        <path d="M112 78 L112 74" stroke="#8B7355" stroke-width="1" stroke-linecap="round"/>
-                        <path d="M116 80 L118 76" stroke="#8B7355" stroke-width="1" stroke-linecap="round"/>
+                        <path d="M84 80 L82 76" stroke="#8B7355" stroke-width="1" stroke-linecap="round" />
+                        <path d="M88 78 L88 74" stroke="#8B7355" stroke-width="1" stroke-linecap="round" />
+                        <path d="M92 80 L94 76" stroke="#8B7355" stroke-width="1" stroke-linecap="round" />
+                        <path d="M108 80 L106 76" stroke="#8B7355" stroke-width="1" stroke-linecap="round" />
+                        <path d="M112 78 L112 74" stroke="#8B7355" stroke-width="1" stroke-linecap="round" />
+                        <path d="M116 80 L118 76" stroke="#8B7355" stroke-width="1" stroke-linecap="round" />
 
                         <!-- Cute little smile -->
-                        <path d="M94 98 Q100 104 106 98" stroke="#D2691E" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <path d="M94 98 Q100 104 106 98" stroke="#D2691E" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
 
                         <!-- Baby bonnet -->
-                        <path d="M55 75 Q60 35 100 30 Q140 35 145 75" fill="#FFB6C1" stroke="#FF69B4" stroke-width="2"/>
-                        <path d="M60 72 Q65 45 100 40 Q135 45 140 72" fill="#FFC0CB"/>
+                        <path d="M55 75 Q60 35 100 30 Q140 35 145 75" fill="#FFB6C1" stroke="#FF69B4"
+                            stroke-width="2" />
+                        <path d="M60 72 Q65 45 100 40 Q135 45 140 72" fill="#FFC0CB" />
 
                         <!-- Bonnet bow -->
-                        <circle cx="70" cy="70" r="5" fill="#FF69B4"/>
-                        <path d="M65 70 Q55 60 50 70 Q55 80 65 70" fill="#FFB6C1"/>
+                        <circle cx="70" cy="70" r="5" fill="#FF69B4" />
+                        <path d="M65 70 Q55 60 50 70 Q55 80 65 70" fill="#FFB6C1" />
 
                         <!-- Small decorative elements -->
-                        <circle cx="100" cy="50" r="3" fill="#FFD700" opacity="0.6"/>
+                        <circle cx="100" cy="50" r="3" fill="#FFD700" opacity="0.6" />
 
                         <!-- Zzz for sleeping -->
                         <text x="145" y="60" class="zzz-text" fill="#B0C4DE" font-size="12" font-weight="bold">z</text>
-                        <text x="155" y="50" class="zzz-text zzz-2" fill="#B0C4DE" font-size="14" font-weight="bold">z</text>
-                        <text x="165" y="38" class="zzz-text zzz-3" fill="#B0C4DE" font-size="16" font-weight="bold">z</text>
+                        <text x="155" y="50" class="zzz-text zzz-2" fill="#B0C4DE" font-size="14"
+                            font-weight="bold">z</text>
+                        <text x="165" y="38" class="zzz-text zzz-3" fill="#B0C4DE" font-size="16"
+                            font-weight="bold">z</text>
                     </svg>
                 </div>
 
@@ -218,10 +239,10 @@
                 <!-- Decorative header -->
                 <div class="card-header">
                     <svg class="header-decoration" viewBox="0 0 200 30">
-                        <path d="M0 15 Q50 0 100 15 Q150 30 200 15" stroke="#FFB6C1" stroke-width="2" fill="none"/>
-                        <circle cx="100" cy="15" r="6" fill="#FF69B4"/>
-                        <circle cx="70" cy="12" r="3" fill="#FFD700"/>
-                        <circle cx="130" cy="18" r="3" fill="#FFD700"/>
+                        <path d="M0 15 Q50 0 100 15 Q150 30 200 15" stroke="#FFB6C1" stroke-width="2" fill="none" />
+                        <circle cx="100" cy="15" r="6" fill="#FF69B4" />
+                        <circle cx="70" cy="12" r="3" fill="#FFD700" />
+                        <circle cx="130" cy="18" r="3" fill="#FFD700" />
                     </svg>
                 </div>
 
@@ -234,11 +255,11 @@
                     <div class="detail-card" data-animate="slide-right">
                         <div class="detail-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="3" y="4" width="18" height="18" rx="2"/>
-                                <line x1="16" y1="2" x2="16" y2="6"/>
-                                <line x1="8" y1="2" x2="8" y2="6"/>
-                                <line x1="3" y1="10" x2="21" y2="10"/>
-                                <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
+                                <rect x="3" y="4" width="18" height="18" rx="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                                <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01" />
                             </svg>
                         </div>
                         <div class="detail-content">
@@ -251,8 +272,8 @@
                     <div class="detail-card" data-animate="slide-up">
                         <div class="detail-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="12" cy="12" r="10"/>
-                                <path d="M12 6v6l4 2"/>
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" />
                             </svg>
                         </div>
                         <div class="detail-content">
@@ -264,8 +285,8 @@
                     <div class="detail-card location-card" data-animate="slide-left">
                         <div class="detail-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-                                <circle cx="12" cy="9" r="2.5"/>
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                <circle cx="12" cy="9" r="2.5" />
                             </svg>
                         </div>
                         <div class="detail-content">
@@ -283,7 +304,8 @@
                     <div class="decorative-line">
                         <span></span>
                         <svg class="line-heart" viewBox="0 0 24 24">
-                            <path fill="#FF69B4" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            <path fill="#FF69B4"
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                         </svg>
                         <span></span>
                     </div>
@@ -300,7 +322,8 @@
                     <div class="btn-bg"></div>
                     <div class="btn-content">
                         <svg class="btn-icon" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M20.54 6.63c-1.62-4.08-6.27-5.75-10.42-4.13C6.72 3.88 4.5 6.88 4.13 10.13c-.25 2.25.25 4.5 1.38 6.38.12.25 0 .5-.13.62-1.25.75-2.12 1.88-2.5 3.13-.12.5.13.87.63.75 1.37-.25 2.62-.88 3.62-1.75.25-.25.5-.25.75-.13 2.88 1.25 6.25 1 8.88-.75 3.25-2.25 4.63-6.25 3.78-10.25v-.5zM9.38 12.5c-.75 0-1.38-.62-1.38-1.37s.63-1.38 1.38-1.38 1.37.63 1.37 1.38-.62 1.37-1.37 1.37zm5.24 0c-.75 0-1.37-.62-1.37-1.37s.62-1.38 1.37-1.38 1.38.63 1.38 1.38-.63 1.37-1.38 1.37z"/>
+                            <path fill="currentColor"
+                                d="M20.54 6.63c-1.62-4.08-6.27-5.75-10.42-4.13C6.72 3.88 4.5 6.88 4.13 10.13c-.25 2.25.25 4.5 1.38 6.38.12.25 0 .5-.13.62-1.25.75-2.12 1.88-2.5 3.13-.12.5.13.87.63.75 1.37-.25 2.62-.88 3.62-1.75.25-.25.5-.25.75-.13 2.88 1.25 6.25 1 8.88-.75 3.25-2.25 4.63-6.25 3.78-10.25v-.5zM9.38 12.5c-.75 0-1.38-.62-1.38-1.37s.63-1.38 1.38-1.38 1.37.63 1.37 1.38-.62 1.37-1.37 1.37zm5.24 0c-.75 0-1.37-.62-1.37-1.37s.62-1.38 1.37-1.38 1.38.63 1.38 1.38-.63 1.37-1.38 1.37z" />
                         </svg>
                         <span>ניווט למקום</span>
                     </div>
@@ -311,11 +334,11 @@
                     <div class="btn-bg"></div>
                     <div class="btn-content">
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="18" cy="5" r="3"/>
-                            <circle cx="6" cy="12" r="3"/>
-                            <circle cx="18" cy="19" r="3"/>
-                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
-                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                            <circle cx="18" cy="5" r="3" />
+                            <circle cx="6" cy="12" r="3" />
+                            <circle cx="18" cy="19" r="3" />
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
                         </svg>
                         <span>שתף הזמנה</span>
                     </div>
@@ -326,11 +349,11 @@
                     <div class="btn-bg"></div>
                     <div class="btn-content">
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="4" width="18" height="18" rx="2"/>
-                            <line x1="16" y1="2" x2="16" y2="6"/>
-                            <line x1="8" y1="2" x2="8" y2="6"/>
-                            <line x1="3" y1="10" x2="21" y2="10"/>
-                            <path d="M9 16l2 2 4-4"/>
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                            <path d="M9 16l2 2 4-4" />
                         </svg>
                         <span>הוסף ליומן</span>
                     </div>
@@ -345,8 +368,8 @@
                 <!-- Decorative top -->
                 <div class="rsvp-decoration-top">
                     <svg viewBox="0 0 300 50">
-                        <path d="M0 40 Q75 10 150 40 Q225 70 300 40" stroke="#FFB6C1" stroke-width="2" fill="none"/>
-                        <path d="M0 45 Q75 15 150 45 Q225 75 300 45" stroke="#FFE4E1" stroke-width="1" fill="none"/>
+                        <path d="M0 40 Q75 10 150 40 Q225 70 300 40" stroke="#FFB6C1" stroke-width="2" fill="none" />
+                        <path d="M0 45 Q75 15 150 45 Q225 75 300 45" stroke="#FFE4E1" stroke-width="1" fill="none" />
                     </svg>
                 </div>
 
@@ -362,7 +385,7 @@
                         <button type="button" class="attendance-btn coming" data-status="coming" id="btn-coming">
                             <div class="btn-inner">
                                 <svg class="status-icon" viewBox="0 0 24 24">
-                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                                 </svg>
                                 <span>בהחלט!</span>
                             </div>
@@ -371,16 +394,19 @@
                         <button type="button" class="attendance-btn maybe" data-status="maybe" id="btn-maybe">
                             <div class="btn-inner">
                                 <svg class="status-icon" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" />
                                 </svg>
                                 <span>אולי</span>
                             </div>
                         </button>
 
-                        <button type="button" class="attendance-btn not-coming" data-status="not-coming" id="btn-not-coming">
+                        <button type="button" class="attendance-btn not-coming" data-status="not-coming"
+                            id="btn-not-coming">
                             <div class="btn-inner">
                                 <svg class="status-icon" viewBox="0 0 24 24">
-                                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+                                    <path
+                                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
                                 </svg>
                                 <span>לא הפעם</span>
                             </div>
@@ -400,7 +426,7 @@
                         <div class="input-row">
                             <div class="input-group">
                                 <label for="phone">טלפון</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="050-0000000" dir="ltr">
+                                <input type="tel" id="phone" name="phone" required dir="ltr">
                                 <div class="input-decoration"></div>
                             </div>
                         </div>
@@ -410,14 +436,18 @@
                             <label>כמה תהיו?</label>
                             <div class="guest-counter">
                                 <button type="button" class="counter-btn" id="minus-btn">
-                                    <svg viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></svg>
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M19 13H5v-2h14v2z" />
+                                    </svg>
                                 </button>
                                 <div class="counter-value">
                                     <span id="guest-count">1</span>
                                     <small>אורחים</small>
                                 </div>
                                 <button type="button" class="counter-btn" id="plus-btn">
-                                    <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -426,10 +456,12 @@
                         <div class="blessing-wrapper">
                             <button type="button" class="blessing-toggle" id="blessing-toggle">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                 </svg>
                                 <span>הוסיפו ברכה</span>
-                                <svg class="toggle-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+                                <svg class="toggle-arrow" viewBox="0 0 24 24">
+                                    <path d="M7 10l5 5 5-5z" />
+                                </svg>
                             </button>
                             <div class="blessing-field" id="blessing-container">
                                 <textarea id="blessing" name="blessing" placeholder="נשמח לקבל ברכה חמה..."></textarea>
@@ -440,7 +472,7 @@
                         <button type="submit" class="submit-btn" id="submit-btn">
                             <span class="btn-text">שלחו אישור הגעה</span>
                             <svg class="btn-arrow" viewBox="0 0 24 24">
-                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
                             </svg>
                             <div class="loading-spinner">
                                 <div class="spinner"></div>
@@ -452,8 +484,8 @@
                     <div class="success-state" id="success-message">
                         <div class="success-animation">
                             <svg class="checkmark" viewBox="0 0 52 52">
-                                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
-                                <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
                             </svg>
                         </div>
                         <h3>תודה רבה!</h3>
@@ -470,8 +502,10 @@
         <footer class="footer">
             <div class="footer-decoration">
                 <svg viewBox="0 0 400 60">
-                    <path d="M0 30 Q100 0 200 30 Q300 60 400 30" stroke="#FFB6C1" stroke-width="1" fill="none" opacity="0.5"/>
-                    <path d="M0 35 Q100 5 200 35 Q300 65 400 35" stroke="#FFE4E1" stroke-width="1" fill="none" opacity="0.3"/>
+                    <path d="M0 30 Q100 0 200 30 Q300 60 400 30" stroke="#FFB6C1" stroke-width="1" fill="none"
+                        opacity="0.5" />
+                    <path d="M0 35 Q100 5 200 35 Q300 65 400 35" stroke="#FFE4E1" stroke-width="1" fill="none"
+                        opacity="0.3" />
                 </svg>
             </div>
             <div class="footer-content">
@@ -499,4 +533,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
