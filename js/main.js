@@ -45,6 +45,12 @@ const CONFIG = {
     // The actual Google Script URL is stored securely in Vercel environment variables
     formEndpoint: '/api/submit-rsvp',
 
+    // Guest Counter Settings
+    guestCounter: {
+        min: 1,
+        max: 5,
+    },
+
     // Animation Settings
     animations: {
         confettiOnLoad: true,
@@ -395,7 +401,7 @@ function selectAttendance(status, clickedBtn) {
 // ============================================
 
 function incrementGuests() {
-    if (state.guestCount < 20) {
+    if (state.guestCount < CONFIG.guestCounter.max) {
         state.guestCount++;
         updateGuestDisplay();
         animateCounter('up');
@@ -403,7 +409,7 @@ function incrementGuests() {
 }
 
 function decrementGuests() {
-    if (state.guestCount > 1) {
+    if (state.guestCount > CONFIG.guestCounter.min) {
         state.guestCount--;
         updateGuestDisplay();
         animateCounter('down');

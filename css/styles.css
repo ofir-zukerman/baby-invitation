@@ -58,6 +58,8 @@ html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Prevent double-tap zoom on iOS */
+    touch-action: manipulation;
 }
 
 body {
